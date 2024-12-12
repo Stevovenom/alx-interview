@@ -1,13 +1,15 @@
+#!/usr/bin/python3
 def isWinner(x, nums):
     """
     Determines the winner of the prime game after x rounds.
 
     Args:
         x (int): Number of rounds.
-        nums (list): List of integers representing the upper bounds for each round.
+        nums (list): List of integers rep the upper bounds for each round.
 
     Returns:
-        str or None: Name of the player with the most wins ("Maria" or "Ben"), or None if it's a tie.
+        str or None: Name of player with most wins
+        ("Maria" or "Ben"), or None if it's a tie.
     """
     if x <= 0 or not nums:
         return None
@@ -47,6 +49,7 @@ def isWinner(x, nums):
         return "Ben"
     else:
         return None
+
 
 # Example usage
 if __name__ == "__main__":
